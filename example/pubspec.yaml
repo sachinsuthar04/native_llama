@@ -1,0 +1,36 @@
+name: native_llama_example
+description: "Demonstrates the capabilities of the native_llama plugin."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The plugin itself
+  native_llama:
+    path: ../
+
+  get: ^4.6.6
+  google_fonts: ^8.0.2
+  path_provider: ^2.1.5
+  sqlite3: ^2.5.0
+  sqlite3_flutter_libs: ^0.5.24
+  path: ^1.9.1
+  shared_preferences: ^2.5.5
+  flutter_markdown_plus: ^1.0.7
+  flutter_downloader: ^1.11.6
+  permission_handler: ^11.3.1
+  url_launcher: ^6.3.1
+  file_picker: ^11.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

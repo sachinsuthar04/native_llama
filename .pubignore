@@ -1,0 +1,45 @@
+# ==========================================
+# 1. STRIP UNUSED DESKTOP/SERVER BACKENDS
+# ==========================================
+# We MUST ship the core ggml/src code, but we strip
+# heavy GPU backends we aren't using on mobile to save space.
+ios/shared_cpp/ggml/src/ggml-cuda/
+ios/shared_cpp/ggml/src/ggml-sycl/
+ios/shared_cpp/ggml/src/ggml-hexagon/
+ios/shared_cpp/ggml/src/ggml-musa/
+ios/shared_cpp/ggml/src/ggml-webgpu/
+ios/shared_cpp/ggml/src/ggml-opencl/
+ios/shared_cpp/ggml/src/ggml-openvino/
+ios/shared_cpp/ggml/src/ggml-cann/
+ios/shared_cpp/ggml/src/ggml-blas/
+ios/shared_cpp/ggml/src/ggml-rpc/
+
+# ==========================================
+# 2. STRIP UPSTREAM BLOAT
+# ==========================================
+ios/shared_cpp/examples/
+ios/shared_cpp/tests/
+ios/shared_cpp/pocs/
+ios/shared_cpp/media/
+ios/shared_cpp/docs/
+ios/shared_cpp/scripts/
+ios/shared_cpp/.git/
+ios/shared_cpp/.github/
+
+# ==========================================
+# 3. IGNORE CUSTOM TEST ASSETS
+# ==========================================
+ios/shared_cpp/tools/mtmd/test-1.jpeg
+ios/shared_cpp/tools/mtmd/test-2.mp3
+ios/shared_cpp/tools/mtmd/tests/
+
+# ==========================================
+# 4. IGNORE LOCAL BUILD ARTIFACTS
+# ==========================================
+example/build/
+example/ios/build/
+example/ios/Pods/
+example/ios/.symlinks/
+example/android/app/build/
+example/android/.cxx/
+example/android/.gradle/
