@@ -1,9 +1,9 @@
 name: native_llama
 description: "A high-performance Flutter plugin for running Llama models (GGUF) locally on Android (Vulkan) and iOS (Metal) with support for multimodal vision, speculative decoding, and embedding extraction."
 version: 1.0.0
-homepage: https://github.com/ExploreAritra/native_llama
-repository: https://github.com/ExploreAritra/native_llama
-issue_tracker: https://github.com/ExploreAritra/native_llama/issues
+homepage: https://github.com/sachinsuthar04/native_llama
+repository: https://github.com/sachinsuthar04/native_llama
+issue_tracker: https://github.com/sachinsuthar04/native_llama/issues
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
